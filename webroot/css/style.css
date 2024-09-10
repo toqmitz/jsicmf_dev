@@ -1,0 +1,14 @@
+  body,
+  tooltip,
+  popover {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",  "Noto Serif JP", "Sawarabi Mincho", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  }
+  
+  @media all and (-ms-high-contrast: none) {
+    body,
+    tooltip,
+    popover {
+      font-family: Verdana, Meiryo, sans-serif;
+    }
+  }
+  

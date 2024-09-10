@@ -1,0 +1,692 @@
+/*
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {font-family: ‘Noto Sans Japanese’, ‘ヒラギノ角ゴシック’, ‘メイリオ’ ,sans-serif;}
+*/
+@charset "UTF-8";
+@import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css");
+/*@import url("hover-min.css");*/
+
+/* width:980px以下では非表示 */
+
+@media screen and (max-width: 800px){
+div.over800px, span.over800px, img.over800px{
+		display:none;
+	}
+
+.inputformnamae, .inputformfurigana, .inputformmailaddress, .inputformtelno, .inputforminquiry{
+	width:15rem;
+  }
+}
+
+/* width:980以上では非表示 */
+
+@media screen and (min-width: 800px){
+	div.under800px, span.under800px, img.under800px{
+		display:none;
+	}
+	.inputformnamae, .inputformfurigana, .inputformmailaddress, .inputformtelno, .inputforminquiry{
+		width:30rem;
+		}
+
+}
+
+/* navbar 事業内容・代表からは英仏語の場合2行になるため、高さの調整をしている */ 
+li.line2 {
+	position:relative;
+	top:-1.5vh;
+	margin-bottom:-1.5vh; 
+}
+
+p.line2 {
+	display:block;
+	position:relative;
+	top:-1.5vh;
+	margin-bottom:-1.5vh; 
+}
+
+/**/
+p.card-line2{
+	margin-top:-3vh
+	!important;
+}
+
+span.f200{font-size:200%;}
+span.f175{font-size:175%;}
+span.f150{font-size:150%;}
+span.f125{font-size:125%;}
+span.f120{font-size:120%;}
+span.f115{font-size:115%;}
+span.f110{font-size:110%;}
+span.f105{font-size:105%;}
+span.f100{font-size:100%;}
+span.f95{font-size:95%;}
+span.f90{font-size:90%;}
+span.f85{font-size:85%;}
+span.f80{font-size:80%;}
+span.f75{font-size:75%;}
+span.f70{font-size:70%;}
+span.f65{font-size:65%;}
+span.f60{font-size:60%;}
+span.f55{font-size:55%;}
+span.f50{font-size:50%;}
+span.f09em{font-size:0.9em;}
+span.f10em{font-size:1.0em;}
+span.f11em{font-size:1.1em;}
+span.f12em{font-size:1.2em;}
+
+div.h30{height:  30px;}
+div.h50{height:  50px;}
+div.h100{height: 100px;}
+div.h150{height: 150px;}
+div.h200{height: 200px;}
+div.h250{height: 250px;}
+div.h300{height: 300px;}
+div.h350{height: 350px;}
+div.h400{height: 400px;}
+div.h450{height: 450px;}
+div.h500{height: 500px;}
+div.h550{height: 550px;}
+div.h600{height: 600px;}
+div.h650{height: 650px;}
+div.h700{height: 700px;}
+div.h750{height: 750px;}
+div.h800{height: 800px;}
+div.h850{height: 850px;}
+div.h900{height: 900px;}
+div.h950{height: 950px;}
+div.h1000{height: 1000px;}
+
+.w-3{width: 3&}
+.w-5{width: 5%;}
+.w-7{width: 7%;}
+.w-8{width: 8%;}
+.w-9{width: 9%;}
+.w-10{width: 10%;}
+.w-13{width: 13%;}
+.w-15{width: 15%;}
+.w-17{width: 17%;}
+.w-20{width: 20%;}
+.w-22{width: 22%;}
+.w-25{width: 25%;}
+.w-30{width: 30%;}
+.w-35{width: 35%;}
+.w-37{width: 37%;}
+.w-40{width: 40%;}
+.w-45{width: 45%;}
+.w-50{width: 50%;}
+.w-55{width: 55%;}
+.w-60{width: 60%;}
+.w-70{width: 70%;}
+.w-80{width: 80%;}
+
+.lh-17{line-height: 1.7em;}
+
+.mb-minus05{margin-bottom: -0.5em;}
+.mb-minus1{margin-bottom: -1em;}
+.mb-minus2{margin-bottom: -2em;}
+.mb-05{margin-bottom:0.5em;}
+.mt-6{margin-top:6em;}
+.mb-6{margin-bottom:6em;}
+.mt-7{margin-top:7em;}
+.mb-7{margin-bottom:7em;}
+.mt-10{margin-top:10em;}
+.mb-10{margin-bottom:10em;}
+.pt-6{padding-top:6em;}
+.pb-6{padding-bottom:6em;}
+.pt-7{padding-top:7em;}
+.pb-7{padding-bottom:7em;}
+.pt-10{padding-top:10em;}
+.pb-10{padding-bottom:10em;}
+
+.bg-light2{background-color: #e3e4e6;}
+
+select:disabled {
+	color: #000000;
+	border: 1px solid black;
+	background-color: #cccccc;
+  }
+
+
+div#contents{
+	min-height:auto;
+}
+
+
+div#container{
+	width: 700px;
+	min-height: auto;
+	margin-left : auto ;
+	margin-right : auto ;
+	font-size:0.9em;
+}
+
+div#logo{
+   align:center;
+   margin: 0 auto;
+}
+
+
+div.radio{
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#ffffff;
+ font-weight: bold;
+ font-size:0.9em;
+}
+
+div.radio_enqimg{
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#000000;
+ font-weight: bold;
+ font-size:0.9em;
+ vertical-align:middle;
+}
+
+
+
+
+div#explication{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 2px #000000;
+	-webkit-box-shadow: 0px 0px 2px #000000;
+	box-shadow: 0px 0px 2px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffdd21', endColorstr = '#e5dea5');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffdd21', endColorstr = '#ebe6c0')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #efe457), color-stop(1.00, #feae31));
+background: -webkit-linear-gradient(#efe457, #feae31);
+background: -moz-linear-gradient(#efe457, #feae31);
+background: -o-linear-gradient(#efe457, #feae31);
+background: -ms-linear-gradient(#efe457, #feae31);
+background: linear-gradient(#efe457, #feae31);
+
+
+	/*
+	background-image: -moz-linear-gradient(top, #ffdd21, #ebe6c0);
+	background-image: -ms-linear-gradient(top, #ffdd21, #ebe6c0);
+	background-image: -o-linear-gradient(top, #ffdd21, #ebe6c0);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#ffdd21), to(#ebe6c0));
+	background-image: -webkit-linear-gradient(top, #ffdd21, #ebe6c0);
+	background-image: linear-gradient(top, #ffdd21, #ebe6c0);
+	*/
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+	opacity: 0.79;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 79);
+	/*-ms-filter must come before filter*/
+	filter: alpha(opacity = 79);
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*All filters must be placed together*/
+}
+
+span.information {
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#0000cd;
+ font-weight: bold;
+ font-size:1.2em;
+}
+
+span.attention {
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#333333;
+ font-weight: bold;
+ font-size:0.9em;
+}
+
+.attention_red {
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#E60012;
+ font-weight: bold;
+ font-size:0.9em;
+}
+
+span.attention2{
+	white-space: nowrap;
+	font-size:0.8em;
+}
+
+
+span.attention_red_with_marker {
+ background: linear-gradient(transparent 0%, #E60012 0%);
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#ffffff;
+ font-weight: bold;
+ font-size:1.1em;
+}
+span.attention_11 {
+ border:0px;
+ border-collapse:collapse;
+ border-spacing:1px;
+ margin:2px;
+ color:#333333;
+ font-weight: bold;
+ font-size:1.1em;
+}
+
+
+
+table#reg_from_jp, td.koumokuname{
+	border: 0px #bbbbbb solid;
+	cellpadding: 3px;
+	width:100%;
+}
+
+
+
+li.mb05{margin-bottom: 0.5em;}
+
+span#alertnamae,span#alertnamaekana, span#alertmailaddress, span#alertaddress, span#alertbirthdate{
+	color:#ffffff;
+    background-color:#ff0000;
+	font-weight: bold;
+	font-size:1em;
+}
+
+
+div#header{
+	height:50px;
+}
+
+div#spacer{
+	height:20px;
+}
+
+div#footer{
+}
+
+hr#footerhr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+div#footertext{
+	padding-left:20px;
+	font-size:0.8em;
+}
+
+div#overlay{
+	/*　要素を重ねた時の順番　*/
+	z-index:1;
+  
+	/*　画面全体を覆う設定　*/
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(214, 214, 214, 0.747);
+  
+	/*　画面の中央に要素を表示させる設定　*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div#modalcontent{
+	z-index:2;
+	width:50%;
+	padding: 1em;
+	background:#fff;
+}
+
+/* アコーディオンメニュー */
+/*ボックス全体*/
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 100%;/*最大幅*/
+}
+
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 13px 12px;
+    color: #ffba47;
+    font-weight: bold;
+    background: #fff2cc;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+/*アイコンを表示*/
+.accbox label:before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 8px;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :#ffe9a9;
+}
+
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+
+
+/* nav-bar */
+.bg_jsicmf{
+	background-color: #334ca0 !important;
+	opacity:0.9;
+	transition: background-color 800ms;
+}
+
+.nav-link{
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+
+ul.navbar-nav{
+	height:76px;
+}
+
+.navbar-nav li {
+    display:inline-block;
+    padding-top:15px;
+}
+
+.navbar-nav li a{
+    display:block;
+    width:100%;
+    padding:10px 15px;
+}
+.navbar-nav li {
+  transition: background-color 2s;
+}
+
+.navbar-nav li:hover {
+	background-color: #527aff;
+  border-bottom: 2px solid #F4F5F6;
+  transition: background-color 800ms;
+  transition: border-bottom 400ms;
+}
+
+.navbar-nav li.selected {
+  background-color: rgb(255,97,0);
+}
+
+
+
+
+/* ジャンボトロン */
+div.jumbotron{
+}
+
+/*
+.headertop{
+	background-image: url("../img/topmain.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+}
+*/
+.header_1{
+	background-image: url("../img/topmain.jpg");
+	background-size: cover;
+	transition: all 1s 2s ease;
+	-webkit-transition: all 1s 2s ease 0s;
+	-moz-transition: all 1s 2s ease 0s;
+	-ms-transition: all 1s 2s ease 0s;
+	-o-transition: all 1s 2s ease 0s;
+
+}
+.header_2{
+	background-image: url("../img/topmain2.jpg");
+	background-size: cover;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+
+}
+
+
+.worktop{
+	background-image: url("../img/worktop.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+}
+.resulttop{
+	background-image: url("../img/result.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;	
+}
+.fromreptop{
+	background-image: url("../img/topmain.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;	
+}
+.companyinfotop{
+	background-image: url("../img/companyinfo.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;	
+}
+.inquirytop{
+	background-image: url("../img/post.jpg");
+	background-size: cover;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;	
+}
+
+/* パンくず */
+nav.breadcrumb{
+	margin-bottom:2em;
+}
+
+/* パンくずのセパレータ */
+li.breadcrumb-item+.breadcrumb-item::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f054";
+	font-weight: bold;
+}
+
+#内部リンクのずれ調整
+a.anchor{
+    padding-top: 140px !important;
+    margin-top: -140px !important;
+}
+
+.colorRed{ color: red }
+.fontBold{ font-weight: bold}
+
+/* Topページ背景色 */
+.bg_ourservice{background-color: #EDF4F6;}
+.bg_results{background-color:#282C3C;}
+
+.jsicmf_toptitlefont{
+	letter-spacing : 4px;                /* 文字間 */
+	text-shadow    : 
+		 2px  2px 1px #282c3c,
+		-2px  2px 1px #282c3c,
+		 2px -2px 1px #282c3c,
+		-2px -2px 1px #282c3c,
+		 2px  0px 1px #282c3c,
+		 0px  2px 1px #282c3c,
+		-2px  0px 1px #282c3c,
+		 0px -2px 1px #282c3c;        /* 文字の影 */
+}
+
+/*
+.container-fluid{
+	padding-right:40px !important;
+}*/
+
+
+#page-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 67%;
+}
+#page-top a {
+    background: #fffbf9;
+    text-decoration: none;
+    color: #fff;
+    width: 60px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    opacity: .75;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #ffd4ba;
+}
+
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 400ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.rowcenter {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.txtoverlay {
+	position: relative;
+	}
+  
+.txtoverlay p {
+	position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    color: #eee; 
+    font-weight: bold; 
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+
+
+@-webkit-keyframes zoomUp {
+	0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	}
+	100% {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	}
+	}
+	
+	@keyframes zoomUp { /*1.1倍させる指定*/
+	0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	}
+	100% {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	}
+	}
+	
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img { 
+	/*12秒かけて拡大させる*/
+	-webkit-animation: zoomUp 12s linear 0s;
+	animation: zoomUp 12s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	}
+	.swiper-slide {
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	}
+	.slide-img {
+	background-size: cover;
+	background-position: center center; /*背景画像は中央を軸に表示させる*/
+	height: 50rem; /* 高さ表示*/
+	}
+
+	.slide-text {
+		position: absolute;
+		z-index: 10;
+		font-size: 3rem;
+		color: #fff;
+		width: 100%;
+		top: 50%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+a.linktxt {
+	color:#3f3f3f;
+}
+a.linktxt:hover{
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: dotted 1px #3f3f3f;
+}
+
